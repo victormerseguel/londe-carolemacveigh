@@ -53,16 +53,3 @@
 .active {
   border-bottom: 1px solid #695032;
 }
-
-.animeUp {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: animeUp 0.3s ease-in-out forwards;
-}
-
-@keyframes animeUp {
-  to {
-    opacity: initial;
-    transform: initial;
-  }
-}

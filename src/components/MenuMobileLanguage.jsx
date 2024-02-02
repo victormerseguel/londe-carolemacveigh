@@ -1,8 +1,8 @@
 import styles from "./MenuMobileLanguage.module.css";
+import anime from "./css-helpers/Animate.module.css";
 
 import { useContext } from "react";
 import { GlobalContext } from "../hooks/GlobalContext";
-import NavItem from "./NavItem";
 import { languages_class_db, languages_db } from "../databases/smalltexts_db";
 import { useNavigate } from "react-router-dom";
 
@@ -11,8 +11,13 @@ import close from "../assets/menu-close.svg";
 
 const MenuMobile = ({ lang }) => {
   const navigate = useNavigate();
-  const { language, setLanguage, setMenuMobileLanguage } =
-    useContext(GlobalContext);
+  const {
+    language,
+    setLanguage,
+    setMenuMobileLanguage,
+    animate2,
+    setAnimate2,
+  } = useContext(GlobalContext);
   let { globalLanguage } = useContext(GlobalContext);
 
   const handleClick = (l) => {
@@ -24,11 +29,19 @@ const MenuMobile = ({ lang }) => {
       }
     });
     navigate("/" + globalLanguage);
-    setMenuMobileLanguage(false);
+    setAnimate2(false);
+    setTimeout(() => {
+      setMenuMobileLanguage(false);
+      setAnimate2(true);
+    }, 500);
   };
 
   return (
-    <div className={styles.menu_mobile_wrap + " " + styles.animeUp}>
+    <div
+      className={`${styles.menu_mobile_wrap} ${
+        animate2 ? anime.animeIn : anime.animeOut
+      }`}
+    >
       <div className={styles.logo}>
         <img src={logo} alt="Logo L'Onde" />
       </div>

@@ -5,13 +5,17 @@ import { GlobalContext } from "../hooks/GlobalContext";
 import { navbar_db } from "../databases/smalltexts_db";
 
 const NavItem = ({ item, indice, lang, classs, state }) => {
-  const { menuState, setMenuMobile } = useContext(GlobalContext);
+  const { menuState, setMenuMobile, setAnimate1 } = useContext(GlobalContext);
 
   return (
     <li
       className={classs ? styles.menu_desktop : null}
       onClick={() => {
-        setMenuMobile(false);
+        setAnimate1(false);
+        setTimeout(() => {
+          setMenuMobile(false);
+          setAnimate1(true);
+        }, 500);
       }}
     >
       <a

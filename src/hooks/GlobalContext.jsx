@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const GlobalContext = createContext();
 
 export const GlobalStorage = ({ children }) => {
-  const [language, setLanguage] = useState("");
+  const [language, setLanguage] = useState("Français");
   let globalLanguage = "";
 
   const [homeVisible, setHomeVisible] = useState();
@@ -14,6 +14,8 @@ export const GlobalStorage = ({ children }) => {
   const [menuState, setMenuState] = useState("home");
   const [menuMobile, setMenuMobile] = useState(false);
   const [menuMobileLanguage, setMenuMobileLanguage] = useState(false);
+  const [animate1, setAnimate1] = useState(true);
+  const [animate2, setAnimate2] = useState(true);
 
   let options = {
     threshold: [],
@@ -68,6 +70,10 @@ export const GlobalStorage = ({ children }) => {
         setMenuMobile,
         menuMobileLanguage,
         setMenuMobileLanguage,
+        animate1,
+        setAnimate1,
+        animate2,
+        setAnimate2,
         options,
       }}
     >

@@ -1,0 +1,25 @@
+.animeIn {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: animeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes animeIn {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+.animeOut {
+  opacity: 1;
+  transform: translateY(0px);
+  animation: animeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes animeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}

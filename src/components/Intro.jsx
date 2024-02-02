@@ -13,6 +13,7 @@ import videobg from "../assets/videobackground-2.webm";
 import londelogo from "../assets/londe-logo.png";
 import languageIcon from "../assets/language.svg";
 import menuMobileIcon from "../assets/menu-mobile.svg";
+import thumb_videobg from "../assets/videobg-thumb4.jpg";
 
 const Intro = ({ lang }) => {
   const { language, setLanguage, menuState, setMenuMobile } =
@@ -53,6 +54,9 @@ const Intro = ({ lang }) => {
 
   return (
     <header className={styles.container} id="home">
+      <div className={styles.background}>
+        <img src={thumb_videobg} alt="" />
+      </div>
       <div className={styles.background}>
         <video src={videobg} autoPlay loop muted ref={homeRef}></video>
       </div>

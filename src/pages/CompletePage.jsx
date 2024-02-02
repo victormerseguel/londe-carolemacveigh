@@ -1,15 +1,15 @@
 import "../App.css";
 
-import Intro from "./Intro";
-import Method from "./Method";
-import Phrase from "./Phrase";
-import Services from "./Services";
-import About from "./About";
-import Contacts from "./Contacts";
-import Footer from "./Footer";
-import Head from "./Head";
-import MenuMobile from "./MenuMobile";
-import MenuMobileLanguage from "./MenuMobileLanguage";
+import Intro from "../components/Intro";
+import Method from "../components/Method";
+import Phrase from "../components/Phrase";
+import Services from "../components/Services";
+import About from "../components/About";
+import Contacts from "../components/Contacts";
+import Footer from "../components/Footer";
+import Head from "../components/Head";
+import MenuMobile from "../components/MenuMobile";
+import MenuMobileLanguage from "../components/MenuMobileLanguage";
 import { useContext } from "react";
 import { GlobalContext } from "../hooks/GlobalContext";
 

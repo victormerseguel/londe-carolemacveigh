@@ -1,4 +1,5 @@
 import styles from "./MenuMobile.module.css";
+import anime from "./css-helpers/Animate.module.css";
 
 import { useContext } from "react";
 import { GlobalContext } from "../hooks/GlobalContext";
@@ -9,19 +10,39 @@ import languageIcon from "../assets/language.svg";
 import close from "../assets/menu-close.svg";
 
 const MenuMobile = ({ lang }) => {
-  const { setMenuMobile, setMenuMobileLanguage } = useContext(GlobalContext);
+  const {
+    menuMobile,
+    setMenuMobile,
+    setMenuMobileLanguage,
+    animate1,
+    setAnimate1,
+  } = useContext(GlobalContext);
 
   const handleClick = () => {
-    setMenuMobile(false);
+    setTimeout(() => {
+      setMenuMobile(false);
+    }, 500);
     setMenuMobileLanguage(true);
   };
 
+  const handleClickClose = () => {
+    setAnimate1(false);
+    setTimeout(() => {
+      setMenuMobile(false);
+      setAnimate1(true);
+    }, 500);
+  };
+
   return (
-    <div className={styles.menu_mobile_wrap + " " + styles.animeUp}>
+    <div
+      className={`${styles.menu_mobile_wrap} ${
+        animate1 ? anime.animeIn : anime.animeOut
+      }`}
+    >
       <div className={styles.logo}>
         <img src={logo} alt="Logo L'Onde" />
       </div>
-      <div className={styles.close} onClick={() => setMenuMobile(false)}>
+      <div className={styles.close} onClick={() => handleClickClose()}>
         <img src={close} alt="Close Menu" />
       </div>
       <nav>
