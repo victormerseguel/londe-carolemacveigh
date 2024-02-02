@@ -1,0 +1,95 @@
+.method_wrap {
+  margin-top: 205px;
+  z-index: 1;
+  background-image: url("../assets/method-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  padding: 0 20px;
+}
+
+.method_wrap h3 {
+  padding-top: 90px;
+  font-family: Museo, serif;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.method_content {
+  display: flex;
+  gap: 47px;
+  max-width: 1050px;
+  margin: 75px auto 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.photos {
+  min-width: 300px;
+}
+.photos img {
+  width: 100%;
+}
+
+.photos_mobile_wrap,
+.photos_mobile_wrap img {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.text_wrap {
+  margin-bottom: 100px;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  max-width: 558px;
+}
+
+@media (min-width: 890px) {
+  .desktop {
+    display: block;
+  }
+
+  .tablet,
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 889px) {
+  .photos {
+    min-width: 100px;
+    max-width: 203px;
+  }
+}
+
+@media (max-width: 890px) and (min-width: 640px) {
+  .desktop,
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+  }
+}
+@media (max-width: 640px) {
+  .method_wrap h3 {
+    padding-top: 30px;
+  }
+  .photos,
+  .desktop,
+  .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

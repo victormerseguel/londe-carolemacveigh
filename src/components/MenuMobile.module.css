@@ -1,0 +1,75 @@
+.menu_mobile_wrap {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("../assets/services-bg.jpg");
+  z-index: 5;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.logo img {
+  width: 75px;
+}
+
+.close {
+  position: absolute;
+  top: 77px;
+  right: 47px;
+}
+
+.menu_mobile_wrap nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 190px);
+}
+
+.menu_mobile_wrap nav ul li {
+  list-style: none;
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.menu_mobile_wrap nav ul li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #695032;
+}
+
+.menu_mobile_wrap nav ul li a:visited {
+  color: #695032;
+}
+
+.menu_mobile_wrap nav ul li:last-of-type {
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu_mobile_wrap nav ul li:last-of-type img {
+  width: 50px;
+}
+
+.animeUp {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: animeUp 0.3s ease-in-out forwards;
+}
+
+@keyframes animeUp {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
