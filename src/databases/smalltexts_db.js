@@ -95,7 +95,7 @@ const footer_db = [
   {
     fr: `conditions d'utilisation |`,
     pt: `termos de uso |`,
-    en: `conditions of use |`,
+    en: `terms of use |`,
   },
   {
     fr: ` concepteur de sites Web: `,

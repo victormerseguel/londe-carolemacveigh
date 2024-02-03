@@ -57,6 +57,21 @@
   gap: 10px;
 }
 
-.menu_mobile_wrap nav ul li:last-of-type img {
-  width: 50px;
+.languageLi {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.languageLi img:first-of-type {
+  width: 25px;
+}
+
+.languageLi img:last-of-type {
+  width: 30px;
+  margin-top: 5px;
+  margin-left: -10px;
 }

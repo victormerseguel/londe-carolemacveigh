@@ -36,6 +36,14 @@ const MenuMobile = ({ lang }) => {
     }, 500);
   };
 
+  const handleClickClose = () => {
+    setAnimate2(false);
+    setTimeout(() => {
+      setMenuMobileLanguage(false);
+      setAnimate2(true);
+    }, 500);
+  };
+
   return (
     <div
       className={`${styles.menu_mobile_wrap} ${
@@ -45,10 +53,7 @@ const MenuMobile = ({ lang }) => {
       <div className={styles.logo}>
         <img src={logo} alt="Logo L'Onde" />
       </div>
-      <div
-        className={styles.close}
-        onClick={() => setMenuMobileLanguage(false)}
-      >
+      <div className={styles.close} onClick={() => handleClickClose()}>
         <img src={close} alt="Close Menu" />
       </div>
       <nav>

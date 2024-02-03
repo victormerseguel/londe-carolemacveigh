@@ -1,0 +1,38 @@
+.terms_wrap {
+  padding: 90px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background-image: url("../assets/services-bg.jpg");
+}
+
+.terms_wrap h3 {
+  text-align: center;
+  font-family: Museo, serif;
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 48px;
+}
+
+.terms_wrap h4,
+.terms_wrap h5,
+.terms_wrap p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.terms_wrap h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 32px 0 16px;
+}
+.terms_wrap h5 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.terms_wrap p {
+  font-size: 14px;
+  font-weight: 100;
+}

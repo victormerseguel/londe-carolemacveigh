@@ -1,6 +1,8 @@
-import { footer_db } from "../databases/smalltexts_db";
 import styles from "./Footer.module.css";
 
+import { Link } from "react-router-dom";
+
+import { footer_db } from "../databases/smalltexts_db";
 import logo from "../assets/londe-logo.png";
 
 const Footer = ({ lang }) => {
@@ -32,7 +34,7 @@ const Footer = ({ lang }) => {
       <p className={styles.footer_legaltext}>
         {footer_db[4][lang]}
         <br className={styles.mobile} />
-        <a href="#">{footer_db[5][lang]}</a>
+        <Link to={`/${lang}/terms`}>{footer_db[5][lang]}</Link>
         <br className={styles.mobile} />
         {footer_db[6][lang]}
         <a href="https://victormerseguel.com">{footer_db[7][lang]}</a>

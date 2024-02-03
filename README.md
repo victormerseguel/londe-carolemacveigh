@@ -45,7 +45,7 @@
 
 ### Dependências do cliente
 
-- [] atualizar url do site no index.html depois que for definido
+- [] atualizar url do site no index.html (hreflang) depois que for definido
 - [] links contacts
 - [] criação página termos de uso
 - [] criação politicas de privacidade

@@ -7,6 +7,7 @@ import NavItem from "./NavItem";
 
 import logo from "../assets/londe-logo.png";
 import languageIcon from "../assets/language.svg";
+import expand from "../assets/expand.svg";
 import close from "../assets/menu-close.svg";
 
 const MenuMobile = ({ lang }) => {
@@ -55,8 +56,11 @@ const MenuMobile = ({ lang }) => {
             onClick={() => {
               handleClick();
             }}
+            className={styles.languageLi}
           >
             <img src={languageIcon} alt="Globe" />
+            Language
+            <img src={expand} alt="" />
           </li>
         </ul>
       </nav>
