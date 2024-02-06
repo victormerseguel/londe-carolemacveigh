@@ -2,7 +2,7 @@
   padding: 90px 20px;
   max-width: 900px;
   margin: 0 auto;
-  background-image: url("../assets/services-bg.jpg");
+  background-image: url("../assets/inspirations-bg.jpg");
 }
 
 .terms_wrap h3 {
@@ -10,7 +10,7 @@
   font-family: Museo, serif;
   font-size: 30px;
   font-weight: 100;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
 
 .terms_wrap h4,
@@ -23,16 +23,22 @@
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
-  margin: 32px 0 16px;
+  margin: 16px 0 16px;
 }
 .terms_wrap h5 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 8px;
 }
 
-.terms_wrap p {
+.terms_wrap p,
+.legal {
   font-size: 14px;
   font-weight: 100;
+  margin-bottom: 32px;
+}
+
+.legal {
+  padding-top: 24px;
 }

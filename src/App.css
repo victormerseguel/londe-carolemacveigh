@@ -7,3 +7,11 @@
 .hide {
   display: none;
 }
+
+#method,
+#inspirations,
+#about,
+#sophrology,
+#contacts {
+  scroll-margin-top: 80px;
+}

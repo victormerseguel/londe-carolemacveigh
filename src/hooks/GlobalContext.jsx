@@ -3,13 +3,15 @@ import { createContext, useState } from "react";
 export const GlobalContext = createContext();
 
 export const GlobalStorage = ({ children }) => {
-  const [language, setLanguage] = useState("Français");
-  let globalLanguage = "";
+  const [language, setLanguage] = useState("Português");
+  const [globalLanguage, setGlobalLanguage] = useState("pt");
+  let storageCookie;
 
   const [homeVisible, setHomeVisible] = useState();
   const [methodVisible, setMethodVisible] = useState();
-  const [servicesVisible, setServicesVisible] = useState();
+  const [inspirationsVisible, setInspirationsVisible] = useState();
   const [aboutVisible, setAboutVisible] = useState();
+  const [sophrologyVisible, setSophrologyVisible] = useState();
   const [contactsVisible, setContactsVisible] = useState();
   const [menuState, setMenuState] = useState("home");
   const [menuMobile, setMenuMobile] = useState(false);
@@ -27,24 +29,34 @@ export const GlobalStorage = ({ children }) => {
   let order = [
     homeVisible,
     methodVisible,
-    servicesVisible,
+    inspirationsVisible,
     aboutVisible,
+    sophrologyVisible,
     contactsVisible,
+  ];
+
+  const menuItems = [
+    "home",
+    "method",
+    "inspirations",
+    "about",
+    "sophrology",
+    "contacts",
   ];
 
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", () => {
-      if (order[0] > order[1]) {
-        setMenuState("home");
-      } else if (order[1] > order[2]) {
-        setMenuState("method");
-      } else if (order[2] > order[3]) {
-        setMenuState("services");
-      } else if (order[3] > order[4]) {
-        setMenuState("about");
-      } else {
-        setMenuState("contacts");
-      }
+      order[0] > order[1]
+        ? setMenuState(menuItems[0])
+        : order[1] > order[2]
+        ? setMenuState(menuItems[1])
+        : order[2] > order[3]
+        ? setMenuState(menuItems[2])
+        : order[3] > order[4]
+        ? setMenuState(menuItems[3])
+        : order[4] > order[5]
+        ? setMenuState(menuItems[4])
+        : setMenuState(menuItems[5]);
     });
   }
 
@@ -54,14 +66,17 @@ export const GlobalStorage = ({ children }) => {
         language,
         setLanguage,
         globalLanguage,
+        setGlobalLanguage,
         homeVisible,
         setHomeVisible,
         methodVisible,
         setMethodVisible,
-        servicesVisible,
-        setServicesVisible,
+        inspirationsVisible,
+        setInspirationsVisible,
         aboutVisible,
         setAboutVisible,
+        sophrologyVisible,
+        setSophrologyVisible,
         contactsVisible,
         setContactsVisible,
         menuState,
@@ -74,7 +89,9 @@ export const GlobalStorage = ({ children }) => {
         setAnimate1,
         animate2,
         setAnimate2,
+        storageCookie,
         options,
+        menuItems,
       }}
     >
       {children}

@@ -40,10 +40,10 @@ const Contacts = ({ lang }) => {
 
     try {
       const res = await emailjs.send(
-        "serviceId",
-        "templateId",
+        "service_kd5noy4",
+        "template_ted7i1p",
         templareParams,
-        "publicKey"
+        "Vu0hDhzf_v66srCsj"
       );
       console.log("Email enviado", res.status, res.text);
 
@@ -82,7 +82,14 @@ const Contacts = ({ lang }) => {
           </div> */}
           <div className={styles.contacts_info}>
             <img src={phone} alt="phone" />
-            <p>+351 123 456 789</p>
+            <span>
+              <p>
+                +{"("}351{") "} 911 517 858
+              </p>
+              <p>
+                +{"("}33{")"} 7 67 88 11 16
+              </p>
+            </span>
           </div>
           <div className={styles.contacts_info}>
             <img src={mail} alt="email" />

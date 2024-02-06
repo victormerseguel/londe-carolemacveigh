@@ -31,7 +31,7 @@
 - [x] mudança de linguagem a partir do input de seleção
 - [-] implementação de cookies
 - [x] implementação de SEO
-- [] envio formulário para email - https://www.youtube.com/watch?app=desktop&v=Zbg1BHOVzRg&ab_channel=Sujeitoprogramador
+- [x] envio formulário para email - https://www.youtube.com/watch?app=desktop&v=Zbg1BHOVzRg&ab_channel=Sujeitoprogramador
 
 - versão tablet / mobile
   - [x] Intro
@@ -45,32 +45,36 @@
 
 ### Dependências do cliente
 
-- [] atualizar url do site no index.html (hreflang) depois que for definido
+- [] atualizar url do site no index.html depois que for definido (hrflang)
 - [] links contacts
-- [] criação página termos de uso
-- [] criação politicas de privacidade
-- [] login emailjs - https://www.emailjs.com/
-- [] SEO - description - Criar database
-- [] definir lingua padrão
-  - [] atualizar x-default index.html
-  - [] atualizar language em GlobalContext
-  - [] atualizar liga de globalLanguage em App.jsx
+- [x] criação página termos de uso
+- [x] criação politicas de privacidade
+- [x] login emailjs - https://www.emailjs.com/
+- [x] SEO - description - Criar database
+- [x] definir lingua padrão
+  - [-] atualizar x-default index.html
+  - [x] atualizar language em GlobalContext
+  - [x] atualizar lingua de globalLanguage em App.jsx
+- [x] definir email para receber mensagens do site
 
 ### Upgrades
 
-- [] uso de localstorage com ssr
+- [x] uso de localstorage
 
-### Instruções de Criação emailJS
+### Feedback
 
-- Acesse https://www.emailjs.com/
-- Crie uma conta
-- Entre no email que utilizou no cadastro para confirmar a conta
-- Acesse sua conta em https://dashboard.emailjs.com/sign-in
-- Clique em "Add New Service"
-- Selecione o botão do Google
-- Vai aparecer um popup para fazer o login com a conta google.
-- Faça login no google
-- Clique em "Create Service"
-- Obs. se por acaso aparecer algum tipo de erro, cancela e faz novamente o processo.
-- Assim que fizer isso, por favor me passe os dados de login para que eu possa configurar.
-- Pronto, é só isso!
+- [x] adicionar segunda citação
+- [x] mudar fotos method
+- [x] alterar titulo de services
+- [x] mudar logo da onda divina para o proprio logo
+- [x] cortar parte de baixo da foto da carole
+- [x] colocar dois numeros de telefone: português e frances
+- atualizar textos
+  - [] metatags description
+  - [] title
+  - [] keywords
+- [x] adicionar seção o que é sofrologia
+- [x] adicionar nova seção no menu
+- [x] alterar quebras de layout css @media menu
+- [x] adicionar nova seção no rodapé
+- [] pre-render - https://github.com/gugacarbo/react-simple-snap

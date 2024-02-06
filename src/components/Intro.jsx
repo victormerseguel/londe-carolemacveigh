@@ -24,17 +24,20 @@ const Intro = ({ lang }) => {
   const [navScroll, setNavScroll] = useState(false);
   const homeRef = useRef();
 
+  // select language
   const handleChanging = (target) => {
     setLanguage(target.value);
 
     languages_db.map((lang, i) => {
       if (lang === target.value) {
         globalLanguage = languages_class_db[i];
+        localStorage.setItem("languageStore", JSON.stringify(globalLanguage));
       }
     });
     navigate("/" + globalLanguage);
   };
 
+  // navbar color
   const scrollNav = () => {
     window.scrollY > 50 ? setNavScroll(true) : setNavScroll(false);
   };
@@ -43,6 +46,7 @@ const Intro = ({ lang }) => {
     window.addEventListener("scroll", scrollNav);
   }
 
+  // observer
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const entry = entries[0];
@@ -71,9 +75,15 @@ const Intro = ({ lang }) => {
           <ul>
             <NavItem indice={0} lang={lang} classs={true} item={"home"} />
             <NavItem indice={1} lang={lang} classs={true} item={"method"} />
-            <NavItem indice={2} lang={lang} classs={true} item={"services"} />
+            <NavItem
+              indice={2}
+              lang={lang}
+              classs={true}
+              item={"inspirations"}
+            />
             <NavItem indice={3} lang={lang} classs={true} item={"about"} />
-            <NavItem indice={4} lang={lang} classs={true} item={"contacts"} />
+            <NavItem indice={4} lang={lang} classs={true} item={"sophrology"} />
+            <NavItem indice={5} lang={lang} classs={true} item={"contacts"} />
             <span
               className={styles.menu_mobile}
               onClick={() => setMenuMobile(true)}
@@ -98,6 +108,7 @@ const Intro = ({ lang }) => {
           <h1>{title_db[0][lang]}</h1>
           <h2>Carole Mac Veigh</h2>
         </div>
+        <div className={styles.intro_footer}></div>
       </div>
     </header>
   );

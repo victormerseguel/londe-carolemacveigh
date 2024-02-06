@@ -1,3 +1,8 @@
+import { about_title } from "./about_db";
+import { inspirations_title } from "./inspirations_db";
+import { method_title } from "./method_db";
+import { whatis_menu_title } from "./whatis_db";
+
 const date = new Date();
 const currentYear = date.getFullYear();
 
@@ -8,19 +13,24 @@ const navbar_db = [
     en: "Home",
   },
   {
-    fr: "Méthode de Travail",
-    pt: "Método de Trabalho",
-    en: "Work Method",
+    fr: method_title[0].fr,
+    pt: method_title[0].pt,
+    en: method_title[0].en,
   },
   {
-    fr: "Services",
-    pt: "Serviços",
-    en: "Services",
+    fr: inspirations_title[0].fr,
+    pt: inspirations_title[0].pt,
+    en: inspirations_title[0].en,
   },
   {
-    fr: "À Propos de Moi",
-    pt: "Sobre Mim",
-    en: "About Me",
+    fr: about_title[0].fr,
+    pt: about_title[0].pt,
+    en: about_title[0].en,
+  },
+  {
+    fr: whatis_menu_title[0].fr,
+    pt: whatis_menu_title[0].pt,
+    en: whatis_menu_title[0].en,
   },
   {
     fr: "Contact",
@@ -37,11 +47,16 @@ const title_db = [
   },
 ];
 
-const phrase_db = [
+const sentence_db = [
   {
-    fr: `"Tout ce à quoi je fais face s'efface, tout ce à quoi je résiste persiste"`,
-    pt: `“Tudo que enfrento desaparece, tudo que resisto persiste”`,
-    en: `“Everything I face fades, everything I resist persists”`,
+    fr: `"Tout ce à quoi l'on résiste persiste. Tout ce que l'on embrasse s'efface..."`,
+    pt: `“Tudo o que resistimos persiste. Tudo o que abraçamos desaparece...”`,
+    en: `“Whatever we resist persists. Everything we embrace fades away...”`,
+  },
+  {
+    fr: `“Il existe un pont entre la médecine conventionnelle et la médecine dite alternative. Je suis pleine de gratitude et je m’unis à tous ceux qui contribuent à sa construction.”`,
+    pt: `“Existe uma ponte entre a medicina convencional e a chamada medicina alternativa. Estou cheia de gratidão e uno-me a todos aqueles que contribuem para a sua construção.”`,
+    en: `“There is a bridge between conventional medicine and so-called alternative medicine. I am full of gratitude and join all those who contribute to its construction.”`,
   },
 ];
 const contacts_db = [
@@ -64,6 +79,9 @@ const contacts_db = [
     fr: "Envoyer",
     pt: "Enviar",
     en: "Send",
+  },
+  {
+    email: "macveighc@gmail.com",
   },
 ];
 const footer_db = [
@@ -88,19 +106,24 @@ const footer_db = [
     en: navbar_db[4].en,
   },
   {
-    fr: `COPYRIGHT © ${currentYear} L'ONDE - CAROLE MAC VEIGH | `,
-    pt: `COPYRIGHT © ${currentYear} L'ONDE - CAROLE MAC VEIGH | `,
-    en: `COPYRIGHT © ${currentYear} L'ONDE - CAROLE MAC VEIGH | `,
+    fr: `COPYRIGHT © ${currentYear} L'ONDE - CAROLE MAC VEIGH`,
+    pt: `COPYRIGHT © ${currentYear} L'ONDE - CAROLE MAC VEIGH`,
+    en: `COPYRIGHT © ${currentYear} L'ONDE - CAROLE MAC VEIGH`,
   },
   {
-    fr: `conditions d'utilisation |`,
-    pt: `termos de uso |`,
-    en: `terms of use |`,
+    fr: `conditions d'utilisation`,
+    pt: `termos de uso`,
+    en: `terms of use`,
   },
   {
-    fr: ` concepteur de sites Web: `,
-    pt: ` web designer: `,
-    en: ` web designer: `,
+    fr: `POLITIQUE DE CONFIDENTIALITÉ`,
+    pt: `POLÍTICA DE PRIVACIDADE`,
+    en: `Privacy Policy`,
+  },
+  {
+    fr: `concepteur de sites Web:`,
+    pt: `web designer:`,
+    en: `web designer:`,
   },
   {
     fr: `Victor Merseguel`,
@@ -116,7 +139,7 @@ const languages_class_db = ["fr", "pt", "en"];
 export {
   navbar_db,
   title_db,
-  phrase_db,
+  sentence_db,
   contacts_db,
   footer_db,
   languages_db,

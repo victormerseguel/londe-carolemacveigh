@@ -12,7 +12,7 @@ import close from "../assets/menu-close.svg";
 
 const MenuMobile = ({ lang }) => {
   const {
-    menuMobile,
+    menuItems,
     setMenuMobile,
     setMenuMobileLanguage,
     animate1,
@@ -48,10 +48,12 @@ const MenuMobile = ({ lang }) => {
       </div>
       <nav>
         <ul>
-          <NavItem indice={1} lang={lang} item={"method"} />
-          <NavItem indice={2} lang={lang} item={"services"} />
-          <NavItem indice={3} lang={lang} item={"about"} />
-          <NavItem indice={4} lang={lang} item={"contacts"} />
+          <NavItem indice={0} lang={lang} />
+          <NavItem indice={1} lang={lang} />
+          <NavItem indice={2} lang={lang} />
+          <NavItem indice={3} lang={lang} />
+          <NavItem indice={4} lang={lang} />
+          <NavItem indice={5} lang={lang} />
           <li
             onClick={() => {
               handleClick();

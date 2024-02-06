@@ -6,9 +6,9 @@ import { useContext, useRef, useEffect, useState } from "react";
 import { method_db, method_title } from "../databases/method_db";
 import { GlobalContext } from "../hooks/GlobalContext";
 
-import photos from "../assets/photos.png";
-import photos_tablet from "../assets/photos-tablet.png";
-import photos_mobile from "../assets/photos-mobile.png";
+import photos from "../assets/photos2.png";
+import photos_tablet from "../assets/photos2.png";
+import photos_mobile from "../assets/photos2-mobile.png";
 
 const Method = ({ lang }) => {
   let { methodVisible, setMethodVisible, options } = useContext(GlobalContext);

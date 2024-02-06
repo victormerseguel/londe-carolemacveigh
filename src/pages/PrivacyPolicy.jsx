@@ -1,5 +1,5 @@
 import styles from "./TermsOfUse.module.css";
-import { terms_db } from "../databases/terms_db";
+import { privacy_db } from "../databases/privacy_db";
 import { useEffect } from "react";
 
 const TermsOfUse = ({ lang }) => {
@@ -8,8 +8,8 @@ const TermsOfUse = ({ lang }) => {
   }, []);
   return (
     <div className={styles.terms_wrap}>
-      <h3>{terms_db[0][lang]}</h3>
-      {terms_db[1][lang].map((item, i) => (
+      <h3>{privacy_db[0][lang]}</h3>
+      {privacy_db[1][lang].map((item, i) => (
         <div key={i}>
           {item.includes("title - ") ? (
             <h4>{item.replace("title - ", "")}</h4>

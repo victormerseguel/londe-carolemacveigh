@@ -1,5 +1,5 @@
 .contacts_wrap {
-  background-image: url("../assets/services-bg.jpg");
+  background-image: url("../assets/inspirations-bg.jpg");
   padding-top: 90px;
   padding-bottom: 100px;
 }
@@ -25,6 +25,10 @@
   display: flex;
   gap: 21px;
   margin-bottom: 33px;
+}
+
+.contacts_info span p:first-of-type {
+  margin-bottom: 8px;
 }
 
 .contacts_info p {

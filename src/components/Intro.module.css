@@ -1,5 +1,7 @@
 .container {
+  position: relative;
   width: 100vw;
+  height: 726px;
 }
 
 .background {
@@ -64,6 +66,7 @@ nav span img:first-of-type {
 .content ul {
   display: flex;
   justify-content: end;
+  align-items: center;
   gap: 28px;
   width: 90%;
 }
@@ -85,6 +88,7 @@ nav span img:first-of-type {
   list-style: none;
   font-family: "Open Sans", sans-serif;
   font-size: 10pt;
+  text-align: center;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -145,6 +149,10 @@ nav span img:first-of-type {
   font-size: 20px;
 }
 
+.intro_footer {
+  height: 300px;
+}
+
 .active {
   border-bottom: #695032 1px solid;
 }
@@ -166,7 +174,7 @@ nav span img:first-of-type {
     font-size: 12px;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 768px) {
   .title_wrap {
     width: 100%;
     left: 0;

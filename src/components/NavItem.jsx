@@ -4,8 +4,9 @@ import { useContext } from "react";
 import { GlobalContext } from "../hooks/GlobalContext";
 import { navbar_db } from "../databases/smalltexts_db";
 
-const NavItem = ({ item, indice, lang, classs, state }) => {
-  const { menuState, setMenuMobile, setAnimate1 } = useContext(GlobalContext);
+const NavItem = ({ indice, lang, classs }) => {
+  const { menuState, setMenuMobile, setAnimate1, menuItems } =
+    useContext(GlobalContext);
 
   return (
     <li
@@ -19,11 +20,11 @@ const NavItem = ({ item, indice, lang, classs, state }) => {
       }}
     >
       <a
-        href={`#${item}`}
-        id={`${item}Button`}
-        className={menuState === item ? styles.active : null}
+        href={`#${menuItems[indice]}`}
+        id={`${menuItems[indice]}Button`}
+        className={menuState === menuItems[indice] ? styles.active : null}
       >
-        {typeof indice == "string" ? indice : navbar_db[indice][lang]}
+        {navbar_db[indice][lang]}
       </a>
     </li>
   );

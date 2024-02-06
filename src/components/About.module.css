@@ -2,6 +2,7 @@
   padding: 90px 20px 0;
   padding-bottom: 100px;
   background-image: url("../assets/about-bg.jpg");
+  box-shadow: -4px 0px 12px 0px rgba(105, 80, 50, 0.25);
 }
 .about_wrap h3 {
   text-align: center;
