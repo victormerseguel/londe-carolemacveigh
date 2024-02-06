@@ -1,6 +1,7 @@
 footer {
   padding: 60px 50px 35px;
   background-image: url("../assets/footer-bg.jpg");
+  box-shadow: inset 0px 4px 5px -1px rgba(105, 80, 50, 0.15);
 }
 
 .footer_content {

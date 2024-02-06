@@ -2,6 +2,7 @@
   background-image: url("../assets/inspirations-bg.jpg");
   padding-top: 90px;
   padding-bottom: 100px;
+  box-shadow: inset 0px 4px 5px -1px rgba(105, 80, 50, 0.15);
 }
 
 .contacts_wrap h3 {
