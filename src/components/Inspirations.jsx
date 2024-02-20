@@ -8,20 +8,12 @@ import {
   inspirations_title,
 } from "../databases/inspirations_db";
 import { GlobalContext } from "../hooks/GlobalContext";
+import Observer from "../hooks/Observer";
 
 const Inspirations = ({ lang }) => {
-  let { inspirationsVisible, options, setInspirationsVisible } =
+  const { inspirationsVisible, setInspirationsVisible } =
     useContext(GlobalContext);
   const inspirationsRef = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setInspirationsVisible(+`${Math.floor(entry.intersectionRatio * 100)}`);
-    }, options);
-
-    observer.observe(inspirationsRef.current);
-  }, [inspirationsVisible]);
 
   return (
     <section
@@ -29,6 +21,11 @@ const Inspirations = ({ lang }) => {
       id="inspirations"
       ref={inspirationsRef}
     >
+      <Observer
+        state={inspirationsVisible}
+        setState={setInspirationsVisible}
+        ref={inspirationsRef}
+      />
       <h3>{inspirations_title[0][lang]}</h3>
       <div className={styles.inspirations_cards}>
         {inspirations_db.map((inspirations) => (

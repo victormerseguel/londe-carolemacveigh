@@ -9,6 +9,7 @@ import local_pin from "../assets/icon-local.svg";
 import phone from "../assets/icon-phone.svg";
 import mail from "../assets/icon-mail.svg";
 import instagram from "../assets/icon-instagram.svg";
+import Observer from "../hooks/Observer";
 
 const Contacts = ({ lang }) => {
   const [name, setName] = useState("");
@@ -17,8 +18,7 @@ const Contacts = ({ lang }) => {
   const [nameValid, setNameValid] = useState(null);
   const [emailValid, setEmailValid] = useState(null);
   const [messageValid, setMessageValid] = useState(null);
-  let { contactsVisible, setContactsVisible, options } =
-    useContext(GlobalContext);
+  const { contactsVisible, setContactsVisible } = useContext(GlobalContext);
   const contactsRef = useRef();
 
   const handleSubmit = async (e) => {
@@ -58,17 +58,13 @@ const Contacts = ({ lang }) => {
     }
   };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setContactsVisible(+`${Math.floor(entry.intersectionRatio * 100)}`);
-    }, options);
-
-    observer.observe(contactsRef.current);
-  }, [contactsVisible]);
-
   return (
     <section className={styles.contacts_wrap} id="contacts" ref={contactsRef}>
+      <Observer
+        state={contactsVisible}
+        setState={setContactsVisible}
+        ref={contactsRef}
+      />
       <h3>{contacts_db[0][lang]}</h3>
       <div className={styles.contacts_content}>
         <div>

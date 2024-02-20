@@ -9,20 +9,12 @@ import { GlobalContext } from "../hooks/GlobalContext";
 import photos from "../assets/photos2.png";
 import photos_tablet from "../assets/photos2.png";
 import photos_mobile from "../assets/photos2-mobile.png";
+import Observer from "../hooks/Observer";
 
 const Method = ({ lang }) => {
   let { methodVisible, setMethodVisible, options } = useContext(GlobalContext);
   const methodRef = useRef();
   const [windowWidth, setWindowsWidth] = useState();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setMethodVisible(+`${Math.floor(entry.intersectionRatio * 100)}`);
-    }, options);
-
-    observer.observe(methodRef.current);
-  }, [methodVisible]);
 
   if (typeof window !== "undefined") {
     window.addEventListener("resize", () => {
@@ -32,6 +24,11 @@ const Method = ({ lang }) => {
 
   return (
     <section className={styles.method_wrap} id="method" ref={methodRef}>
+      <Observer
+        state={methodVisible}
+        setState={setMethodVisible}
+        ref={methodRef}
+      />
       <div className={styles.photos_mobile_wrap + " " + styles.mobile}>
         <img src={photos_mobile} alt="" />
       </div>

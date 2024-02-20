@@ -5,22 +5,19 @@ import { about_db, about_title } from "../databases/about_db";
 import carole_photo from "../assets/carole-photo.png";
 import { useContext, useEffect, useRef } from "react";
 import { GlobalContext } from "../hooks/GlobalContext";
+import Observer from "../hooks/Observer";
 
 const About = ({ lang }) => {
-  let { aboutVisible, setAboutVisible, options } = useContext(GlobalContext);
+  const { aboutVisible, setAboutVisible } = useContext(GlobalContext);
   const aboutRef = useRef();
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setAboutVisible(+`${Math.floor(entry.intersectionRatio * 100)}`);
-    }, options);
-
-    observer.observe(aboutRef.current);
-  }, [aboutVisible]);
 
   return (
     <section className={styles.about_wrap} id="about" ref={aboutRef}>
+      <Observer
+        state={aboutVisible}
+        setState={setAboutVisible}
+        ref={aboutRef}
+      />
       <div className={styles.about_img_wrap + " " + styles.mobile}>
         <img src={carole_photo} alt="Carole Mac Veigh" />
       </div>

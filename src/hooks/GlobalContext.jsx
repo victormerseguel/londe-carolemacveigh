@@ -49,14 +49,14 @@ export const GlobalStorage = ({ children }) => {
       order[0] > order[1]
         ? setMenuState(menuItems[0])
         : order[1] > order[2]
-        ? setMenuState(menuItems[1])
-        : order[2] > order[3]
-        ? setMenuState(menuItems[2])
-        : order[3] > order[4]
-        ? setMenuState(menuItems[3])
-        : order[4] > order[5]
-        ? setMenuState(menuItems[4])
-        : setMenuState(menuItems[5]);
+          ? setMenuState(menuItems[1])
+          : order[2] > order[3]
+            ? setMenuState(menuItems[2])
+            : order[3] > order[4]
+              ? setMenuState(menuItems[3])
+              : order[4] > order[5]
+                ? setMenuState(menuItems[4])
+                : setMenuState(menuItems[5]);
     });
   }
 

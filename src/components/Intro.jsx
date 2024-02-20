@@ -14,11 +14,11 @@ import londelogo from "../assets/londe-logo.png";
 import languageIcon from "../assets/language.svg";
 import menuMobileIcon from "../assets/menu-mobile.svg";
 import thumb_videobg from "../assets/videobg-thumb4.jpg";
+import Observer from "../hooks/Observer";
 
 const Intro = ({ lang }) => {
-  const { language, setLanguage, menuState, setMenuMobile } =
-    useContext(GlobalContext);
-  let { globalLanguage, homeVisible, setHomeVisible, options } =
+  const { language, setLanguage, setMenuMobile } = useContext(GlobalContext);
+  let { globalLanguage, homeVisible, setHomeVisible } =
     useContext(GlobalContext);
   const navigate = useNavigate();
   const [navScroll, setNavScroll] = useState(false);
@@ -46,18 +46,9 @@ const Intro = ({ lang }) => {
     window.addEventListener("scroll", scrollNav);
   }
 
-  // observer
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setHomeVisible(+`${Math.floor(entry.intersectionRatio * 100)}`);
-    }, options);
-
-    observer.observe(homeRef.current);
-  }, [homeVisible]);
-
   return (
     <header className={styles.container} id="home">
+      <Observer state={homeVisible} setState={setHomeVisible} ref={homeRef} />
       <div className={styles.background}>
         <img src={thumb_videobg} alt="" />
       </div>
