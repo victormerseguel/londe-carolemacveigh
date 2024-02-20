@@ -25,7 +25,7 @@ const What = ({ lang }) => {
         <img src={sophrology_logo} alt="Logo Sofrologia" />
       </div>
       <div className={styles.what_content}>
-        {whatis_db[0][lang].map((paragraph, i) => (
+        {whatis_db[0][lang].split("\n").map((paragraph, i) => (
           <Fragment key={i}>
             {paragraph.includes("title - ") ? (
               <h2>{parse(paragraph.replace("title - ", ""))} </h2>

@@ -27,7 +27,7 @@ const About = ({ lang }) => {
           <img src={carole_photo} alt="Carole Mac Veigh" />
         </div>
         <div className={styles.about_text}>
-          {about_db[0][lang].map((paragraph, i) => (
+          {about_db[0][lang].split("\n").map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}
         </div>

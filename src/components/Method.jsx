@@ -39,7 +39,7 @@ const Method = ({ lang }) => {
           <img src={photos_tablet} alt="" className={styles.tablet} />
         </div>
         <div className={styles.text_wrap}>
-          {method_db[0][lang].map((paragraph, i) => (
+          {method_db[0][lang].split("\n").map((paragraph, i) => (
             <p className={styles.text} key={i}>
               {paragraph}
             </p>

@@ -9,7 +9,7 @@ const TermsOfUse = ({ lang }) => {
   return (
     <div className={styles.terms_wrap}>
       <h3>{privacy_db[0][lang]}</h3>
-      {privacy_db[1][lang].map((item, i) => (
+      {privacy_db[1][lang].split("\n").map((item, i) => (
         <div key={i}>
           {item.includes("title - ") ? (
             <h4>{item.replace("title - ", "")}</h4>

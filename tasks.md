@@ -77,4 +77,4 @@
 - [x] adicionar nova seção no menu
 - [x] alterar quebras de layout css @media menu
 - [x] adicionar nova seção no rodapé
-- [] pre-render - https://github.com/gugacarbo/react-simple-snap
+- [-] pre-render - https://github.com/gugacarbo/react-simple-snap
