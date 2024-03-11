@@ -87,7 +87,9 @@ const Contacts = ({ lang }) => {
           </div>
           <div className={styles.contacts_info}>
             <img src={instagram} alt="instagram" />
-            <p>{contacts_db[4].instagram}</p>
+            <a href="https://instagram.com/londe_guia" target="_blank">
+              <p>{contacts_db[4].instagram}</p>
+            </a>
           </div>
         </div>
         <form onSubmit={(e) => handleSubmit(e)}>

@@ -29,7 +29,7 @@
 - [x] validação de formulário
 - [x] erro router
 - [x] mudança de linguagem a partir do input de seleção
-- [-] implementação de cookies
+- [x] implementação de cookies
 - [x] implementação de SEO
 - [x] envio formulário para email - https://www.youtube.com/watch?app=desktop&v=Zbg1BHOVzRg&ab_channel=Sujeitoprogramador
 
@@ -45,14 +45,14 @@
 
 ### Dependências do cliente
 
-- [] atualizar url do site no index.html depois que for definido (hrflang)
-- [] links contacts
+- [x] atualizar url do site no index.html depois que for definido (hrflang)
+- [x] links contacts
 - [x] criação página termos de uso
 - [x] criação politicas de privacidade
 - [x] login emailjs - https://www.emailjs.com/
 - [x] SEO - description - Criar database
 - [x] definir lingua padrão
-  - [-] atualizar x-default index.html
+  - [x] atualizar x-default index.html
   - [x] atualizar language em GlobalContext
   - [x] atualizar lingua de globalLanguage em App.jsx
 - [x] definir email para receber mensagens do site
@@ -70,9 +70,9 @@
 - [x] cortar parte de baixo da foto da carole
 - [x] colocar dois numeros de telefone: português e frances
 - atualizar textos
-  - [] metatags description
-  - [] title
-  - [] keywords
+  - [x] metatags description
+  - [x] title
+  - [x] keywords
 - [x] adicionar seção o que é sofrologia
 - [x] adicionar nova seção no menu
 - [x] alterar quebras de layout css @media menu

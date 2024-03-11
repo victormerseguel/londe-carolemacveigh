@@ -24,6 +24,7 @@
 
 .contacts_info {
   display: flex;
+  align-items: center;
   gap: 21px;
   margin-bottom: 33px;
 }
@@ -36,6 +37,11 @@
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 100;
+}
+
+.contacts_info a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .contacts_content form {

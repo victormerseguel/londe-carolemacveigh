@@ -105,6 +105,20 @@ nav span img:first-of-type {
   font-size: 9pt;
   background-color: transparent;
   border: none;
+  width: fit-content;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("../assets/expand.svg");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: calc(50% + 1px);
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding-right: 1.2rem;
+  padding-left: 2px;
+  text-align: center;
 }
 
 .language {

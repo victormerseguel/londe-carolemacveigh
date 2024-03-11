@@ -8,13 +8,14 @@ import { GlobalContext } from "../hooks/GlobalContext";
 import { title_db } from "../databases/smalltexts_db";
 import { languages_db, languages_class_db } from "../databases/smalltexts_db";
 import NavItem from "./NavItem";
+import Observer from "../hooks/Observer";
 
 import videobg from "../assets/videobackground-2.webm";
 import londelogo from "../assets/londe-logo.png";
 import languageIcon from "../assets/language.svg";
 import menuMobileIcon from "../assets/menu-mobile.svg";
 import thumb_videobg from "../assets/videobg-thumb4.jpg";
-import Observer from "../hooks/Observer";
+import expand from "../assets/expand.svg";
 
 const Intro = ({ lang }) => {
   const { language, setLanguage, setMenuMobile } = useContext(GlobalContext);
