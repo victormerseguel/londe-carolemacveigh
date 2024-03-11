@@ -1,7 +1,7 @@
 import styles from "./Intro.module.css";
 import "../App.css";
 
-import { useContext, useState, useEffect, useRef } from "react";
+import { useContext, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { GlobalContext } from "../hooks/GlobalContext";
@@ -87,9 +87,11 @@ const Intro = ({ lang }) => {
                 value={language}
                 onChange={({ target }) => handleChanging(target)}
               >
-                <option value="Français">Français</option>
-                <option value="Português">Português</option>
-                <option value="English">English</option>
+                {languages_db.map((language) => (
+                  <option key={language} value={language}>
+                    {language}
+                  </option>
+                ))}
               </select>
             </li>
           </ul>

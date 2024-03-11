@@ -17,13 +17,13 @@ function App() {
         <Route index element={<CompletePage lang={globalLanguage} />} />
         <Route path="/fr" element={<CompletePage lang="fr" />} />
         <Route path="/pt" element={<CompletePage lang="pt" />} />
-        <Route path="/en" element={<CompletePage lang="en" />} />
+        {/* <Route path="/en" element={<CompletePage lang="en" />} /> */}
         <Route path="/fr/terms" element={<TermsOfUse lang="fr" />} />
         <Route path="/pt/terms" element={<TermsOfUse lang="pt" />} />
-        <Route path="/en/terms" element={<TermsOfUse lang="en" />} />
+        {/* <Route path="/en/terms" element={<TermsOfUse lang="en" />} /> */}
         <Route path="/fr/privacy" element={<PrivacyPolicy lang="fr" />} />
         <Route path="/pt/privacy" element={<PrivacyPolicy lang="pt" />} />
-        <Route path="/en/privacy" element={<PrivacyPolicy lang="en" />} />
+        {/* <Route path="/en/privacy" element={<PrivacyPolicy lang="en" />} /> */}
       </Routes>
     </>
   );

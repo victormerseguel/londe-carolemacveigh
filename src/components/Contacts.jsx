@@ -28,9 +28,7 @@ const Contacts = ({ lang }) => {
     email === "" ? setEmailValid(false) : setEmailValid(true);
     message === "" ? setMessageValid(false) : setMessageValid(true);
 
-    if (name === "" || email === "" || message === "") {
-      return;
-    }
+    if (name === "" || email === "" || message === "") return;
 
     const templareParams = {
       from_name: name,
@@ -79,21 +77,17 @@ const Contacts = ({ lang }) => {
           <div className={styles.contacts_info}>
             <img src={phone} alt="phone" />
             <span>
-              <p>
-                +{"("}351{") "} 911 517 858
-              </p>
-              <p>
-                +{"("}33{")"} 7 67 88 11 16
-              </p>
+              <p>{contacts_db[4].phone1}</p>
+              <p>{contacts_db[4].phone2}</p>
             </span>
           </div>
           <div className={styles.contacts_info}>
             <img src={mail} alt="email" />
-            <p>info@monsite.fr</p>
+            <p>{contacts_db[4].email}</p>
           </div>
           <div className={styles.contacts_info}>
             <img src={instagram} alt="instagram" />
-            <p>@carolemacveigh</p>
+            <p>{contacts_db[4].instagram}</p>
           </div>
         </div>
         <form onSubmit={(e) => handleSubmit(e)}>

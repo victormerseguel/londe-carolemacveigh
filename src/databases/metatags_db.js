@@ -1,12 +1,17 @@
-export const metatags_db = [
-  {
+export const metatags_db = {
+  title: {
     fr: "L'Onde - Un Temps Pour Soi",
     pt: "L'Onde - Um Tempo Para Você",
     en: "L'Onde - A Time For Yourself",
   },
-  {
+  description: {
     fr: "Certifiée Sophrologue Caycédienne, je me mets à la disposition de tous ceux qui ont la volonté et le courage de faire un pas vers eux-même. Je vous accompagne dans un cadre bienveillant, neutre et respectueux.",
-    pt: "Sofróloga Caycediana certificada, coloco-me à disposição de todos aqueles que tenham vontade e coragem de dar um passo em direção a si mesmos. Eu acompanho você em um ambiente atencioso, neutro e respeitoso.",
-    en: "",
+    pt: "Sofróloga Caycediana certificada, estou ao serviço de todos aqueles que tenham a vontade e a coragem de avançar em direção a si mesmos. Eu acompanho você em um ambiente atencioso, neutro e respeitoso.",
+    en: "As a certified Caycedian Sophrologist, I make myself available to all those who have the determination and courage to take a step towards themselves. I guide you in a caring, neutral, and respectful framework.",
   },
-];
+  keywords: {
+    fr: "sophrologie ,sophrologie caycédienne ,Alfonso Caycedo ,Méthode Caycedo ,bien-être ,guidance ,connaissance de soi ,développement de soi ,capacités ,valeurs ,conscience ,résistances ,peurs ,doutes ,émotions positives ,émotions négatives ,triste ,moral dans les chaussettes ,blasé ,frustré ,perdu ,fréquences basses ,relaxation ,détente ,gestion des émotions ,rencontre avec soi ,prendre le temps ,respirer ,Sophrologie au Portugal ,relâchement ,lâcher prise ,se ressourcer ,bienveillance ,amour ,refoulement ,corps ,esprit ,corps-esprit ,tensions ,perception ,sophrologue ,sophrologue anglais ,sophrologue portugais ,sophrologue français ,phénoménologie ,techniques de relaxation ,techniques de visualisations ,techniques d’imagination ,communication ,burn-out ,alliance ,apaisement ,passage en public ,préparation de concours ,entraînement psycho-corporel ,anxiété ,sommeil léger ,manque de sommeil ,manque de confiance en soi ,authenticité ,nouvelles perspectives ,pensées limitantes ,challenges ,défis ,mères célibataire avec enfants ,dépassé par les évènements ,soucis ,projections futures ,mémoires ,connections cérébrales ,neuroscience ,programmation neurolinguistique ,coeur ,transformation ,transmutation ,énergies subtiles ,quantique ,changement ,zone de confort ,Je suis",
+    pt: "sofrologia ,sofrologia caycediana ,Alfonso Caycedo ,Método Caycedo ,bem-estar ,guia ,orientações ,autoconhecimento ,desenvolvimento pessoal ,habilidades ,valores ,consciência ,resistências ,medos ,dúvidas ,emoções positivas ,emoções negativas ,triste ,moral baixo ,desinteressado ,frustrado ,perdido ,vibrações baixas ,relaxamento ,gestão das emoções ,encontro consigo mesmo ,tomar o tempo ,respirar ,Sofrologia em Portugal ,relaxamento ,soltar ,recarregar ,bondade ,amor ,repressão ,corpo ,mente ,corpo-mente ,tensões ,percepção ,sofrologista ,sofrologista inglês ,sofrologista português ,sofrologista francês ,fenomenologia ,técnicas de relaxamento ,técnicas de visualização ,técnicas de imaginação ,comunicação ,acalmar ,apresentação em público ,preparação para concursos ,treinamento psicocorporal ,ansiedade ,sono leve ,falta de sono ,falta de confiança em si mesmo ,autenticidade ,novas perspectivas ,crenças limitantes ,desafios ,mães solteiras com filhos ,sobrecarregado ,preocupações ,projeções futuras ,memórias ,conexões cerebrais ,neurociência ,programação neurolinguística ,coração ,transformação ,transmutação ,energias sutis ,quântico ,mudança ,zona de conforto ,Eu sou",
+    en: "sophrology ,caycedian sophrology ,Alfonso Caycedo  ,Caycedo Method ,well-being ,guidance ,self-awareness ,self-development ,abilities ,values ,consciousness ,resistances ,fears ,doubts ,positive emotions ,negative emotions ,sad ,feeling down ,jaded ,frustrated ,lost ,low vibrations ,relaxation ,emotion management ,self-discovery ,taking time ,breathing ,Sophrology in Portugal ,letting go ,recharging ,kindness ,love ,repression ,body ,mind ,mind-body ,tensions ,perception ,sophrologist ,english sophrologist ,portuguese sophrologist ,french sofrologist ,phenomenology ,relaxation techniques ,visualization techniques ,imagination techniques ,communication ,burnout ,soothing ,public speaking ,exam preparation ,mind-body training ,anxiety ,light sleep ,lack of sleep ,lack of self-confidence ,authenticity ,new perspectives ,limiting beliefs ,challenges  ,single mothers with children ,overwhelmed ,worries ,future projections ,memories ,brain connections  ,neuroscience ,neuro linguistic programming ,heart ,transformation ,transmutation ,subtle energies ,quantum ,change ,comfort zone ,I am",
+  },
+};

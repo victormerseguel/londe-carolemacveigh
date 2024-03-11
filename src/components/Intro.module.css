@@ -38,6 +38,7 @@
 nav {
   display: flex;
   width: 100%;
+  max-width: 1440px;
   justify-content: space-between;
   align-items: center;
   padding: 30px 60px;
@@ -161,17 +162,22 @@ nav span img:first-of-type {
   display: none;
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  nav span img:first-of-type {
+    width: 61px;
+  }
+  .content ul {
+    gap: 23px;
+    width: 85%;
+  }
+  .content li {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 889px) {
   nav {
     padding: 30px;
-  }
-
-  .content ul {
-    gap: 23px;
-  }
-
-  .content li {
-    font-size: 12px;
   }
 }
 @media (max-width: 768px) {

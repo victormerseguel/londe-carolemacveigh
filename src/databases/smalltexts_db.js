@@ -49,14 +49,14 @@ const title_db = [
 
 const sentence_db = [
   {
-    fr: `"Tout ce à quoi l'on résiste persiste. Tout ce que l'on embrasse s'efface..."`,
-    pt: `“Tudo o que resistimos persiste. Tudo o que abraçamos desaparece...”`,
-    en: `“Whatever we resist persists. Everything we embrace fades away...”`,
+    fr: `« Tout ce à quoi l'on résiste persiste. Tout ce que l'on embrasse s'efface... »`,
+    pt: `“Tudo o que resistimos persiste. Tudo o que abraçamos desvanece...”`,
+    en: `“All that we resist persists. All that we embrace fades away...”`,
   },
   {
-    fr: `“Il existe un pont entre la médecine conventionnelle et la médecine dite alternative. Je suis pleine de gratitude et je m’unis à tous ceux qui contribuent à sa construction.”`,
-    pt: `“Existe uma ponte entre a medicina convencional e a chamada medicina alternativa. Estou cheia de gratidão e uno-me a todos aqueles que contribuem para a sua construção.”`,
-    en: `“There is a bridge between conventional medicine and so-called alternative medicine. I am full of gratitude and join all those who contribute to its construction.”`,
+    fr: `“Il existe un pont entre la médecine conventionnelle et la médecine dite alternative. Je me joins à tous ceux qui contribuent à sa construction. Gratitude.”`,
+    pt: `“Existe uma ponte entre a medicina convencional e a chamada medicina alternativa. Eu me junto a todos aqueles que contribuem para a sua construção. Gratidão.”`,
+    en: `“There is a bridge between conventional medicine and so-called alternative medicine. I join all those who contribute to its construction. Gratitude.”`,
   },
 ];
 const contacts_db = [
@@ -71,9 +71,9 @@ const contacts_db = [
     en: "Name",
   },
   {
-    fr: "Contacter",
-    pt: "Contacto",
-    en: "Contact",
+    fr: "Message",
+    pt: "Mensagem",
+    en: "Message",
   },
   {
     fr: "Envoyer",
@@ -81,7 +81,10 @@ const contacts_db = [
     en: "Send",
   },
   {
+    phone1: "+(351) 911 517 858",
+    phone2: "+(33) 7 67 88 11 16",
     email: "macveighc@gmail.com",
+    instagram: "@londe_guia",
   },
 ];
 const footer_db = [
@@ -116,8 +119,8 @@ const footer_db = [
     en: `terms of use`,
   },
   {
-    fr: `POLITIQUE DE CONFIDENTIALITÉ`,
-    pt: `POLÍTICA DE PRIVACIDADE`,
+    fr: `Politique de Confidentialité`,
+    pt: `Política de Privacidade`,
     en: `Privacy Policy`,
   },
   {
@@ -132,9 +135,17 @@ const footer_db = [
   },
 ];
 
-const languages_db = ["Français", "Português", "English"];
+const languages_db = [
+  "Français",
+  "Português",
+  // "English"
+];
 
-const languages_class_db = ["fr", "pt", "en"];
+const languages_class_db = [
+  "fr",
+  "pt",
+  // "en",
+];
 
 export {
   navbar_db,

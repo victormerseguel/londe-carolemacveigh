@@ -37,11 +37,7 @@ const CompletePage = ({ lang }) => {
 
   return (
     <>
-      <Head
-        lang={lang}
-        title={metatags_db[0][lang]}
-        description={metatags_db[1][lang]}
-      />
+      <Head lang={lang} db={metatags_db} />
       <Intro lang={lang} />
       <Sentence lang={lang} />
       <Method lang={lang} />
