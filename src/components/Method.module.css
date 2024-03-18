@@ -53,6 +53,7 @@
   line-height: 1.6;
   margin-bottom: 15px;
   max-width: 558px;
+  text-align: justify;
 }
 
 @media (min-width: 890px) {
