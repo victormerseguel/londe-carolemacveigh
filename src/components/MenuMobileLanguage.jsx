@@ -26,6 +26,7 @@ const MenuMobile = ({ lang }) => {
     languages_db.map((lang, i) => {
       if (lang === l) {
         globalLanguage = languages_class_db[i];
+        localStorage.setItem("languageStore", JSON.stringify(globalLanguage));
       }
     });
     navigate("/" + globalLanguage);
@@ -58,33 +59,18 @@ const MenuMobile = ({ lang }) => {
       </div>
       <nav>
         <ul>
-          <li
-            onClick={() => {
-              handleClick("Français");
-            }}
-          >
-            <span className={language === "Français" ? styles.active : null}>
-              Français
-            </span>
-          </li>
-          <li
-            onClick={() => {
-              handleClick("Português");
-            }}
-          >
-            <span className={language === "Português" ? styles.active : null}>
-              Português
-            </span>
-          </li>
-          <li
-            onClick={() => {
-              handleClick("English");
-            }}
-          >
-            <span className={language === "English" ? styles.active : null}>
-              English
-            </span>
-          </li>
+          {languages_db.map((lang) => (
+            <li
+              key={lang}
+              onClick={() => {
+                handleClick(lang);
+              }}
+            >
+              <span className={language === lang ? styles.active : null}>
+                {lang}
+              </span>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>

@@ -1,8 +1,8 @@
 export const metatags_db = {
   title: {
-    fr: "L'Onde - Un Temps Pour Soi",
-    pt: "L'Onde - Um Tempo Para Você",
-    en: "L'Onde - A Time For Yourself",
+    fr: "L’Onde - Confiance, Acceptation, Responsabilités",
+    pt: "L’Onde - Confiança, Aceitação, Responsabilidades",
+    en: "L’Onde - Trust, Acceptance and Responsibilities",
   },
   description: {
     fr: "Certifiée Sophrologue Caycédienne, je me mets à la disposition de tous ceux qui ont la volonté et le courage de faire un pas vers eux-même. Je vous accompagne dans un cadre bienveillant, neutre et respectueux.",
