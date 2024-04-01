@@ -1,13 +1,13 @@
 export const metatags_db = {
   title: {
-    fr: "L’Onde - Confiance, Acceptation, Responsabilités",
-    pt: "L’Onde - Confiança, Aceitação, Responsabilidades",
-    en: "L’Onde - Trust, Acceptance and Responsibilities",
+    fr: "L'Onde - Carole Mac Veigh",
+    pt: "L'Onde - Carole Mac Veigh",
+    en: "L'Onde - Carole Mac Veigh",
   },
   description: {
-    fr: "Certifiée Sophrologue Caycédienne, je me mets à la disposition de tous ceux qui ont la volonté et le courage de faire un pas vers eux-même. Je vous accompagne dans un cadre bienveillant, neutre et respectueux.",
-    pt: "Sofróloga Caycediana certificada, estou ao serviço de todos aqueles que tenham a vontade e a coragem de avançar em direção a si mesmos. Eu acompanho você em um ambiente atencioso, neutro e respeitoso.",
-    en: "As a certified Caycedian Sophrologist, I make myself available to all those who have the determination and courage to take a step towards themselves. I guide you in a caring, neutral, and respectful framework.",
+    fr: "Sophrologue Caycédienne certifiée, au service de celles et ceux qui ont la volonté d'ouvrir leur cœur et d'être à l'écoute de leur Être intérieur. Je vous accompagne dans un cadre bienveillant, neutre et respectueux.",
+    pt: "Sofróloga Caycediana certificada, ao serviço de quem tem o desejo de abrir o coração e ouvir o seu Ser interior. Eu acompanho você em um ambiente atencioso, neutro e respeitoso.",
+    en: "Certified Caycedian sophrologist, serving those who have the desire to open their hearts and listen to their Inner Being. I guide you in a caring, neutral, and respectful framework.",
   },
   keywords: {
     fr: "sophrologie ,sophrologie caycédienne ,Alfonso Caycedo ,Méthode Caycedo ,bien-être ,guidance ,connaissance de soi ,développement de soi ,capacités ,valeurs ,conscience ,résistances ,peurs ,doutes ,émotions positives ,émotions négatives ,triste ,moral dans les chaussettes ,blasé ,frustré ,perdu ,fréquences basses ,relaxation ,détente ,gestion des émotions ,rencontre avec soi ,prendre le temps ,respirer ,Sophrologie au Portugal ,relâchement ,lâcher prise ,se ressourcer ,bienveillance ,amour ,refoulement ,corps ,esprit ,corps-esprit ,tensions ,perception ,sophrologue ,sophrologue anglais ,sophrologue portugais ,sophrologue français ,phénoménologie ,techniques de relaxation ,techniques de visualisations ,techniques d’imagination ,communication ,burn-out ,alliance ,apaisement ,passage en public ,préparation de concours ,entraînement psycho-corporel ,anxiété ,sommeil léger ,manque de sommeil ,manque de confiance en soi ,authenticité ,nouvelles perspectives ,pensées limitantes ,challenges ,défis ,mères célibataire avec enfants ,dépassé par les évènements ,soucis ,projections futures ,mémoires ,connections cérébrales ,neuroscience ,programmation neurolinguistique ,coeur ,transformation ,transmutation ,énergies subtiles ,quantique ,changement ,zone de confort ,Je suis",

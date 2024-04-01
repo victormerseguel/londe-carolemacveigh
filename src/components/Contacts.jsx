@@ -87,7 +87,10 @@ const Contacts = ({ lang }) => {
           </div>
           <div className={styles.contacts_info}>
             <img src={instagram} alt="instagram" />
-            <a href="https://instagram.com/londe_guia" target="_blank">
+            <a
+              href={`https://instagram.com/${contacts_db[4].instagram.replace("@", "")}`}
+              target="_blank"
+            >
               <p>{contacts_db[4].instagram}</p>
             </a>
           </div>

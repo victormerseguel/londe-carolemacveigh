@@ -41,9 +41,9 @@ const navbar_db = [
 
 const title_db = [
   {
-    fr: "Sophrologue Caycédienne",
-    pt: "Sofróloga Caycediana",
-    en: "Caycedian Sophrologist",
+    fr: "Sophrologue Caycédienne Certifiée",
+    pt: "Sofróloga Caycediana Certificada",
+    en: "Certified Caycedian Sophrologist",
   },
 ];
 
@@ -83,8 +83,8 @@ const contacts_db = [
   {
     phone1: "+(351) 911 517 858",
     phone2: "+(33) 7 67 88 11 16",
-    email: "info@guialonde.com",
-    instagram: "@londe_guia",
+    email: "macveighc@gmail.com",
+    instagram: "@guialonde_carolemacveigh",
   },
 ];
 const footer_db = [

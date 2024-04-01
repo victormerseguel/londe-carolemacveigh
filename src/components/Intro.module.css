@@ -231,7 +231,9 @@ nav span img:first-of-type {
 
 @media (max-width: 450px) {
   .title_wrap h1 {
-    font-size: 24px;
+    font-size: 22px;
+    text-align: center;
+    padding: 0 15px;
   }
 
   .title_wrap h2 {
